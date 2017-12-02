@@ -31,6 +31,6 @@ def scrape_and_look_for_next_link(url):
         next_url = urlparse.urljoin(base_url, next_link[0].attrib.get('href'))
         print next_url
         scrape_and_look_for_next_link(next_url)
-base_url = 'http://www.madingley.org/uploaded/'
-starting_url = urlparse.urljoin(base_url, 'example_table_1.html')
+base_url = 'https://paulbradshaw.github.io/'
+starting_url = urlparse.urljoin(base_url, 'scraping-for-everyone/webpages/example_table_1.html')
 scrape_and_look_for_next_link(starting_url)
